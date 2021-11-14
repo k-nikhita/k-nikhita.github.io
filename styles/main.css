@@ -1,0 +1,14 @@
+h1 {
+    color:#01066e;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color: 434242;
+}
+.learntocode {
+    width: 800px;
+    height: 600px;
+}
