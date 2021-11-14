@@ -3,6 +3,9 @@ h1 {
     font-size: 45px;
     font-family: 'Roboto', sans-serif;
 }
+h2 {
+    color:5c47fe;
+}
 body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
