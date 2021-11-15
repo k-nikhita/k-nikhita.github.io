@@ -1,21 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+/*navigation menu*/
+header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 30px 10%;
+}
+
+nav {
+  box-sizing: border-box;
+  margin: 50px 0;
+  }
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 60px;
+  text-decoration: none;
+}
+.nav_links li a {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: rgb(6, 120, 190);
+}
+
 h1 {
-    color:#01066e;
-    font-size: 45px;
-    font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 35px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 600;
 }
 h2 {
-    color:5c47fe;
+  color: 5c47fe;
 }
 body {
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    color: 434242;
+  background-color: white;
+  font-family: "Noto Sans Display", sans-serif;
 }
 .learntocode {
-    width: 800px;
-    height: 600px;
-    position: relative;
-    top: 80px;
-    left: 200px;
-
+  width: 800px;
+  height: 600px;
+  display: block;
+  margin: auto;
 }
