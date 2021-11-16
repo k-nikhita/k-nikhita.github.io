@@ -1,9 +1,17 @@
 @import url(//fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Pontano+Sans&display=swap);
+:root {
+--main-radius:5px;
+--main-padding:5px;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
  }
+ body {
+    background-color: white;
+    font-family: "Noto Sans Display", sans-serif;
+  }
 /*navigation menu*/
 header {
   display: flex;
@@ -14,7 +22,7 @@ header {
 
 nav {
   margin: 50px 0;
-  }
+   }
 
 .nav_links {
   list-style: none;
@@ -33,23 +41,53 @@ nav {
 .nav_links li a:hover {
     color: rgb(6, 120, 190);
 }
+.container {
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    grid-gap: 2rem;
+}
+main {
+    background-color: white;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin: 0 0 0 10px;
+}
+#ltc {
+    background-color: white;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin: 0 10px 0 0;
+    }
 
-h1 {
-  color: black;
-  font-size: 35px;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 600;
+#card_image {
+    width: 700px;
+    height: 700px;
+    object-fit: contain;
 }
-h2 {
-  color: 5c47fe;
+#blog1 {
+    background-color: mediumblue;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin: 0 0 0 10px;
 }
-body {
-  background-color: white;
-  font-family: "Noto Sans Display", sans-serif;
+
+#blog2 {
+    background-color: mediumslateblue;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin: 0 10px 0 0;
 }
-.learntocode {
-  width: 800px;
-  height: 600px;
-  display: block;
-  margin: auto;
+
+@media only screen and (max-width:550px) {
+    .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.2fr 0.2fr; 
+    grid-gap: 1rem;
+    }
+}
+#welcome {
+font-family: "Noto Sans Display", sans-serif;
+padding: 250px 0 0 0;
 }
