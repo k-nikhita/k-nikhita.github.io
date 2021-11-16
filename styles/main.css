@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Pontano+Sans&display=swap);
 :root {
---main-radius:5px;
---main-padding:5px;
+--main-radius:15px;
+--main-padding:25px;
 }
 * {
   box-sizing: border-box;
@@ -90,4 +90,83 @@ main {
 #welcome {
 font-family: "Noto Sans Display", sans-serif;
 padding: 250px 0 0 0;
+color: #0678be;
+}
+
+.blogheader {
+    font-family: "Noto Sans Display", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0678be;
+    text-align: center;
+    padding: 5px;
+   }
+.blogdesc {
+    text-align: center;
+    padding: 0 0 25px 0;
+}
+.blogcontainer {
+ display: grid; 
+ height: 100vh;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-gap: 2rem  
+}
+.article1 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+margin: 0 0 0 25px;
+}
+.article2 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+}
+.article3 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+margin: 0 25px 0 0;
+}
+.article4 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+margin: 0 0 0 25px;
+}
+.article5 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+}
+.article6 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+margin: 0 25px 0 0;
+}
+@media only screen and (max-width:550px) {
+    .blogcontainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr; 
+    grid-gap: 1rem;
+    }
 }
