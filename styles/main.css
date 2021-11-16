@@ -163,6 +163,30 @@ border-radius: var(--main-radius);
 padding-top: var(--main-padding);
 margin: 0 25px 0 0;
 }
+.article1 a{
+ text-decoration: none;
+ color: #F05250;   
+}
+.article2 a{
+    text-decoration: none;
+    color: #F05250;    
+   }
+ .article3 a{
+    text-decoration: none;
+    color: #F05250;    
+   }
+   .article4 a{
+    text-decoration: none;  
+    color: #F05250;  
+   }
+   .article5 a{
+    text-decoration: none;   
+    color: #F05250; 
+   }
+   .article6 a{
+    text-decoration: none;
+    color: #F05250;    
+   }
 @media only screen and (max-width:550px) {
     .blogcontainer {
     grid-template-columns: 1fr;
