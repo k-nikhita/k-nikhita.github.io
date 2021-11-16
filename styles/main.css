@@ -194,3 +194,11 @@ margin: 0 25px 0 0;
     grid-gap: 1rem;
     }
 }
+.articletitle {
+    font-family: "Noto Sans Display", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0678be;
+    text-align: center;
+    padding: 0 0 45px 0;
+}
