@@ -22,9 +22,104 @@
         </ul>
       </nav>
     </header>
-    <div class="articletitle">Differences Between Relative, Fixed & Absolute Positioning</div>
-    <div>
-    <p>Hello! Welcome to my first technical blog. I chose this topic because I personally found it quite confusing when I first came across it. And this blog is my attempt to solidify my understanding. My hope is that in trying to do this, I might help someone who ends up reading this. So let's dive in. </p>
-    <br>
-    <p>The <code class="codingtext">position</code> property helps us specify the type of positioning method used for an element. This is important because depending on what we're trying to achieve on a webpage, we might want to position elements differently.</p>
+    <div class="articletitle">
+      Differences Between Relative, Fixed & Absolute Positioning
     </div>
+    <div class="quote">"The best way to learn is to teach."<br>
+      - Frank Oppenheimer</div><br><br>
+    <div>
+      <p>
+        Hello! Welcome to my first technical blog. I chose this topic because I
+        personally found it quite confusing when I first came across it. And
+        this blog is my attempt to solidify my understanding. My hope is that in
+        trying to do this, I might help someone who ends up reading this. So
+        let's dive in.
+      </p>
+      <br />
+      <p>
+        The <code class="codingtext">position</code> property helps us specify
+        the type of positioning method used for an element. This is important
+        because depending on what we're trying to achieve on a webpage, we might
+        want to position elements differently. <br /><br />
+        There are five different values that can be assigned to this property:
+      </p>
+      <ul>
+        <li><code class="codingtext">static</code></li>
+        <li><code class="codingtext">relative</code></li>
+        <li><code class="codingtext">fixed</code></li>
+        <li><code class="codingtext">absolute</code></li>
+        <li><code class="codingtext">sticky</code></li>
+      </ul>
+      <br />
+      <p>
+        In this article, I will primarily focus on the differences between
+        relative, fixed and absolute positioning.
+      </p>
+      <br />
+      <p>
+        The first thing to note in general is that once you have set the
+        position property for any element, they will then be positioned using
+        the top, bottom, left, and right properties. And that these properties
+        will not work unless the position property is set first. They will also
+        work differently depending on the position value.<br /><br />
+        Before we delve into the differences between relative, fixed and
+        absolute position, I would like to briefly discuss the static position. By
+        default, all HTML elements are positioned as static, which means that
+        they will always be positioned according to the normal flow of the page.
+        For example:<br /><br />
+      </p>
+      <h3 id="techblog1">This h3 (Heading 3) element has position: static;</h3>
+      <br />
+      <img src="/images/css-position-static.png" id="relposition">
+      <p>
+        To confirm this, you can right-click on the H3 element above and select
+        "Inspect" to view the element's default position in DOM, as shown in the
+        screenshot here.
+      </p>
+      <br />
+      <h2>position: relative;</h2>
+      <br />
+      <p>
+        An element with <code class="codingtext">position: relative;</code> is positioned <strong>relative</strong>
+        to its normal position in the normal flow of the document.<br><br>
+
+        Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. This will not adjust other content to fit into any gap left by the element after having moved from its former position. <br><br>
+
+        If you right-click to inspect the image or screenshot showing the position of the h3 element in DOM, you will see that the position of this image is set to relative and that it is positioned to move 18px away from the <strong>top</strong> relative to its position in the normal flow of the document.<br><br>
+        The CSS I used for this image is:<br><br>
+        <img src="/images/css-relative-position.png" alt="image showing code for setting the position to relative"><br><br>
+        Please note that you can also use bottom, left and right properties to move the element to where you would like it to sit on the page. <br><br>
+        <p>If any of this sounds like gibberish to you, the best thing to do would be  to test this out yourself (as always, when learning to code!) on your code editor and play around with moving the element to the left, right, bottom and top, and see what properties you end up using to achieve the outcome you want.</p><br>
+
+        <h2>position: fixed;</h2><br>
+        <p>Think of floating headers! Cookie consents! Newsletter pop-ups!</p><br>
+        <p>An element with <code class="codingtext">position: fixed;</code> is positioned relative to the viewport, i.e. the visible area of a web page. This means that it always stays in the same place even when the page is scrolled. Just like with the relative position, the top, right, bottom, and left properties are used to position the element.</p><br>
+        <div id="fixedposition">This div element has position: fixed;</div>
+Can you spot the fixed element on this page? Again, you could right-click the div element to inspect the properties I used in CSS, but here is a screenshot of the CSS that I used: <br><br>
+<img src="/images/css-fixed-position.png" alt="image showing code for setting the position to fixed"><br><br>
+A fixed element does not leave a gap in the page where it would have normally been located. This means that the rest of the content flows as if the element had never been there.</p> <br>
+
+<h2>position: absolute;</h2><br>
+<p>An element with <code class="codingtext">position: absolute;</code> is positioned relative to its nearest positioned parent (as opposed to being positioned relative to the viewport in the case of fixed positioning).<br>
+However, if an absolute positioned element has no positioned parents, it uses the document body, and moves along with page scrolling. Please note that an element with the default, static position, does not count. <br>
+An absolutely positioned element is kind of ignored by its parent. It's on its own. It can be attached to the parent, yes, but the parent is not affected by it at all. You will see this in action in the example below.
+</p><br>
+
+As you can see, I have nested two div elements showing a blue box and a coral-coloured box with relative and absolute positions respectively.
+
+<div id="bluebox">This div element has position; relative
+  <div id="coralbox">This div element has position: absolute;</div>
+</div><br><br>
+
+<p>Here is the CSS I used:</p><br>
+<img src="/images/relative-vs-absolute.png" alt="nested div elements showing relative and absolute positions">
+<br><br>
+<p>Hope this all makes sense. I for sure have understood this way better than I did before I started writing this blog! <br><br>Bonus level: Even though I did not cover the <code class="codingtext">position: sticky;</code> in this blog, I have used it in one of the elements on this page. Can you guess which one it is?</p>
+      
+
+      
+        
+      </p>
+    </div>
+  </body>
+</html>
