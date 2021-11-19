@@ -68,7 +68,7 @@
         they will always be positioned according to the normal flow of the page.
         For example:<br /><br />
       </p>
-      <h3 id="techblog1">This h3 (Heading 3) element has position: static;</h3>
+      <h3 id="techblog1">This &lth3&gt element has position: static;</h3>
       <br />
       <img src="/images/css-position-static.png" id="relposition">
       <p>
@@ -94,8 +94,8 @@
         <h2>position: fixed;</h2><br>
         <p>Think of floating headers! Cookie consents! Newsletter pop-ups!</p><br>
         <p>An element with <code class="codingtext">position: fixed;</code> is positioned relative to the viewport, i.e. the visible area of a web page. This means that it always stays in the same place even when the page is scrolled. Just like with the relative position, the top, right, bottom, and left properties are used to position the element.</p><br>
-        <div id="fixedposition">This div element has position: fixed;</div>
-Can you spot the fixed element on this page? Again, you could right-click the div element to inspect the properties I used in CSS, but here is a screenshot of the CSS that I used: <br><br>
+        <div id="fixedposition">This &ltdiv&gt element has position: fixed;</div>
+Can you spot the fixed element on this page? Again, you could right-click the &ltdiv&gt element to inspect the properties I used in CSS, but here is a screenshot of the CSS that I used: <br><br>
 <img src="/images/css-fixed-position.png" alt="image showing code for setting the position to fixed"><br><br>
 A fixed element does not leave a gap in the page where it would have normally been located. This means that the rest of the content flows as if the element had never been there.</p> <br>
 
@@ -105,10 +105,10 @@ However, if an absolute positioned element has no positioned parents, it uses th
 An absolutely positioned element is kind of ignored by its parent. It's on its own. It can be attached to the parent, yes, but the parent is not affected by it at all. You will see this in action in the example below.
 </p><br>
 
-As you can see, I have nested two div elements showing a blue box and a coral-coloured box with relative and absolute positions respectively.
+As you can see, I have nested two &ltdiv&gt elements showing a blue box and a coral-coloured box with relative and absolute positions respectively.
 
-<div id="bluebox">This div element has position; relative
-  <div id="coralbox">This div element has position: absolute;</div>
+<div id="bluebox">This &ltdiv&gt element has position; relative
+  <div id="coralbox">This &ltdiv&gt element has position: absolute;</div>
 </div><br><br>
 
 <p>Here is the CSS I used:</p><br>
