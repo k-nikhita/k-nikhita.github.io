@@ -22,7 +22,258 @@
         </ul>
       </nav>
     </header>
-    <div class="articletitle">Article 5</div>
+    <div class="articletitle">Javascript Fundamentals</div>
     <div>
-       Oops! This page is still under construction. To be updated soon. 
+      <h5>
+        A blog about the things I have learnt about Javascript in the Third
+        Sprint of the Foundations Course. November 30, 2021
+      </h5>
+      <br />
+      <h3>Making sense of HTML, CSS & Javascript: The Anatomy of a Website</h3>
+      <br />
+      <p>
+        My favourite analogy to help make sense of the three web languages that
+        form the building blocks of most websites is to liken them to a human
+        body. A human body has different systems and functions that allow us to
+        do what we do and how we interact with our surroundings.
+        <br />
+        <br />
+        As you can see in the image below, HTML (Hyper Text Markup Language) is
+        like the skeleton of the human body. Like the skeleton, it defines the
+        content and basic structure of a website - the bare bones. It holds
+        everything together and provides a base to hang everything off. However,
+        while an HTML only website has all of its body parts, it doesn't look
+        like much without its accessories or personal style, nor is it capable
+        of moving, speaking or interacting with its surroundings.
+        <br />
+        <br />
+        CSS (Cascading Style Sheet) is the website's clothing and accessories.
+        It is responsible for outlining the colours, font and positioning of a
+        website's contents, thereby lending it personal style. In the image
+        below, you can tell that the girl is a dancer because of her clothing,
+        dancing socks and headband (and her pose of course!). CSS is usually
+        written in a separate file to HTML but linked to it. Without an HTML
+        file to link to, CSS can't do anything as there is nothing to style,
+        much like clothing and shoes are useless without a human body to dress.
+        <br />
+        <img
+          src="/images/HTML-CSS-Javascript.png"
+          alt="human body with skeleton, muscles and clothes on"
+        />
+        <br />
+        <br />
+        HTML and CSS together can help us create well-structured, attractive
+        websites but without Javascript, just like the muscles in a human body,
+        your websites cannot interact with its users much like a mannequin in a
+        store window. Javascript is a programming language that controls the
+        behaviour of the website and can be compared to the human body's ability
+        to perform actions such as walking or talking (and in the image below:
+        dancing), thanks to its muscular (& nervous) system.
+      </p>
+      <br />
+      <hr />
+      <br />
+
+      <h3>Control Flow</h3>
+      <br />
+      <p>
+        Control Flow can be defined as the order in which the computer executes
+        statements in a script. In Javascript, the computer runs code from top
+        to bottom, i.e. it starts from the first line and ends at the last line,
+        unless it hits a statement or set of instructions (such as loops,
+        conditions or functions) that affect the control flow of the program.
+        <br />
+        <br />
+        This can be likened to writing a script or set of instructions for any
+        of the numerous activities that humans undertake every day. Let's take
+        going for a walk for example. A basic set of steps involved in
+        performing this activity might include:
+      </p>
+      <ul>
+        <li>Getting out of bed.</li>
+        <li>
+          Picking what to wear (Since this will depend on the weather, an
+          additional set of instructions based on conditions would apply. Such
+          as:
+        </li>
+        <ul>
+          <li>If it is not raining, then put on a top and a pair of shorts.</li>
+          <li>If it is raining, then add a rain-jacket to your attire.</li>
+        </ul>
+        <li>Put on walking shoes.</li>
+        <li>Grab the keys of the house.</li>
+        <li>Lock the house.</li>
+        <li>Once out of the house, start walking.</li>
+      </ul>
+      <br />
+      <p>
+        Now the steps outlined above are not exhaustive by any means and may
+        vary for each individual depending on many factors such as their
+        personal preferences, location, climate, etc. The point I am trying to
+        make, however, is that there is a logical order to the steps that one
+        would follow and in the case of computer, this order would be top to
+        bottom.
+        <br />
+        <br />
+        Humans are creatures of habit. And most habits are automatic, hard to
+        break and form a (repetitive) pattern of behaviour that responds to
+        certain stimuli. Imagine that we were trying to a build a habit of going
+        for a walk each morning for 31 days. In that case, we would end up
+        repeating the above set of instructions, <strong>31 times</strong>. This
+        is where <strong>loops</strong> come in.
+        <br />
+        <br />
+        Loops in Javascript offer a quick and easy way to do something
+        repeatedly. There are many different kinds of loops, but they all
+        esentially do the same thing:
+        <strong
+          >they repeat an action (or set of actions), some number of
+          times.</strong
+        >
+      </p>
+      <br />
+      <hr />
+      <br />
+      <h3>What the heck is DOM and why should I care?</h3>
+      <br />
+      <p>
+        First things first, DOM stands for Document Object Model.
+        <br />
+        <br />
+        Okay, so now what? By now, we know that a website is made up HTML
+        elements, attributes, CSS styles, etc. that make up the structure and
+        content of a website (or document in the web). Without a structured way
+        of representing these building blocks and their relation to each other,
+        one can imagine how messy things would get if you were trying to
+        manipulate them.
+        <br />
+        <br />
+        This is where <strong>DOM</strong> comes in! The DOM in simple terms is
+        a programming interface that defines the logical structure of web
+        documents and the way they are accessed and manipulated. In the DOM,
+        model, all of the properties, methods, and events available for
+        manipulating and creating web pages are organized into
+        <strong>objects</strong>; and the structure of these objects is
+        represented in the form of a tree.
+        <br />
+        <br />
+        <img
+          src="/images/DOM-tree-model.gif"
+          alt="The HTML DOM Tree of Objects"
+        />
+        <br />
+        <br />
+        It is important to note that unlike HTML, CSS and Javascript, DOM is
+        <strong>not</strong> a programming language but instead a web interface
+        that allows us to access a document and its elements and even manipulate
+        them. To use an analogy, you could see DOM as an
+        <strong>interpreter</strong> between HTML and Javascript, in that it
+        makes sense of the different languages and provides an interface for
+        communication between someone who speaks the language and another that
+        doesn't.
+        <br />
+        <br />
+        You can use DOM to for example, change a document's text colour,
+        background colour, colour of hyperlinks, etc.
+        <br />
+        <br />
+      </p>
+
+      <hr />
+      <br />
+      <h3>Accessing Data from Arrays and Objects</h3>
+      <br />
+      <p>
+        An <strong>Array</strong> is a special variable, which can hold more
+        than value. You can think of it as a list of items you would like to be
+        stored in a single variable. An array can hold many values under a
+        single name, and these values can be <strong>accessed</strong> by
+        referring to an index number. Javascript arrays are zero-indexed, i.e.
+        the first element of an array will always have an index of 0, and the
+        last element is at he index value equal to the value of the array's
+        length property minus 1.
+        <br />
+        <br />
+        In the example below, the length of the array is 5 but the last element
+        [Chips] is at index 4.
+        <br />
+        <br />
+        <img src="/images/array.png" />
+        <br />
+        <br />
+        An <strong>Object</strong> is a variable that contains many values.
+        Think of it as storing more information about a certain item. In the
+        example above, our array, myList, contained a list of items you might
+        want to buy on your next shopping run. An object can be used to store
+        more information about each of those items, such as price, quantity,
+        etc.
+        <br />
+        <br />
+        In the example below, I have used gingerAle variable as an
+        <strong>object</strong> to store information such as name of the item,
+        price, quantity, etc. for easy retrieval when I need it. The
+        <strong>name:values</strong> pairs in Javascript objects are called
+        <strong>properties</strong>. In our example, <strong>price</strong> is a
+        property and <strong>5:00</strong> is its value.
+        <br />
+        <br />
+        <img src="/images/object.png" />
+        <br />
+        <br />
+        We can access object properties in two ways:
+        <br />
+        <br />
+        <img src="/images/Object-properties.png" />
+        <br />
+        <br />
+      </p>
+
+      <hr />
+      <br />
+      <h3>Functions</h3>
+      <br />
+      <p>
+        A Javascript function is a block of code that is written to perform a
+        particular task. It can be likened to a procedure - a set of statements
+        that perform a task. But for a procedure to qualify as a function, it
+        should take some input and return an output, based on a some obvious (or
+        predefined) relationship between the input and the output. So, to use a
+        function, we need to define it somewhere in our code, where we establish
+        this relationship between the input and output.
+        <br />
+        <br />
+        When writing a program, there might be several instances where we might
+        want to repeat certain tasks without having to specify every single time
+        what the code needs to do. This is where functions make life easier.
+        <br />
+        <br />
+        When explaining loops above, I used the example of trying to develop a
+        habit to go walking every day. If I was to write a code for a machine to
+        do that, I would add the list of instructions to a function such as:
+        <br />
+        <br />
+        <img src="/images/function-walking.png" />
+        <br />
+        <br />
+        Please note that defining a function *does not* execute it. In order to
+        do that, we need to **call** the function. In this instance, I would
+        invoke or call the walking function that I defined above by writing:
+        <br />
+        walking ( );
+        <br />
+        <br />
+        Since I am trying to develop a habit of walking each day, I want this
+        function to be repeated 31 times in a month. This is where I can use a
+        loop to repeat the same function 31 times. This saves me having to write
+        the same instructions 31 times and calling the machine to execute them
+        that many times.
+        <br />
+        <br />
+        <img src="/images/function-walking.png">
+        <br>
+        <br>
+        Thanks for reading!
+        </p>
     </div>
+  </body>
+</html>
