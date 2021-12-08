@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Pontano+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="/blog/blogpage.html">Blog</a></li>
+          <li><a href="/index.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="articletitle">Problem-Solving</div>
+    <div>
+      <h5>A reflection on a recent problem I faced and some of the techniques that helped me solve the problem. December 9, 2021</h5><br><br>
+      <div class="quote">"We cannot solve our problems with the same thinking we used when we created them.""<br>
+       - Albert Einstein</div><br>
+      <br>
+      <p>
+        Problems problems problems! We are surrounded by them. And how dull would life be if we didn't face any problems, challenges or issues, as frustrating as they may seem in the moment!
+
+        This blog is about a problem I got stuck with very early on during the Foundations part of this coding boot camp and how I managed to get unstuck.
+        
+        As part of the prep curriculum for Foundations, we were encouraged to do an online course on Command Line on Code Academy. Since I was very new to the coding world, I was still in the mindset of "must-do-everything-to-the last-letter", so I did all the extra challenges in the course just so I could feel confident of my knowledge of the command line. Funny enough, 4 weeks on, having used the command line SO MANY times for my course work by now, I find it amusing that I was sweating the small stuff, but hey, that's a running theme in my life! Anyway, one of the offline projects that I did for the course required me to open my bash profile in Git and make changes to my existing configuration. I did that successfully and completed the project.
+      </p>
+      <br>
+      <h3>The Problem!</h3>
+       <p>
+        So, I completed the Command Line course, felt reasonably confident that I had done what I needed to and learnt what I supposed to and was now ready to attack content for the Foundations course. Yay! The first technical topic that we covered involved using Git and GitHub for version control, and configuring our terminal so we could start making our first commits for the course work we were going to do. However, when I opened my Git Bash, it looked like this:
+       </p>
+       <br>
+       <img src="/images/git-bash-1.png" alt="image showing command line with weird messages">
+       <br>
+       <br>
+       <p>
+           instead of this:
+       </p>
+       <br>
+       <img src="/images/git-bash-2.png" alt="normal command line interface">
+       <br>
+       <br>
+
+       <h3>Panic Mode Activaaaaaated!</h3>
+       <p>
+        I had read enough about problem solving by then to know that I should not panic. And my first step to solving the problem was to <strong>google</strong> the issue. However, reflecting on it now, I think that even though I knew what to do, I probably wasn't using the right terms or key words in my search. So, here's a hint: if we don't get the answers we're looking for, it's a good idea to pause and think about whether the question we're asking is right or not. Most of the articles I found seemed to technical for my understanding then, and I found myself starting to get flustered. There might have been some grumbling involved! 
+        <br>
+        <br>
+        I spent a fair few hours being stuck and feeling like I just couldn't move on with the content if I hadn't resolved this issue. In hindsight, I probably could have, but the OCD part of my brain just wouldn't let me move on. Since I'd been trying to focus on the study content and avoiding distractions, I had not been looking up the activity on Foundations slack channel for the fear that I might get sucked into another rabbit hole. But when I finally did find my way to the channel, two things happened: 1) I panicked more after getting a sense for how far my course mates were with the content, and 2) I realised that I could simply <strong>ask if someone else had encountered the same issue</strong>. Yay! Progress. I asked the question, but didn't get any answers that were helpful. It seemed like a really odd problem to be stuck with! Arrrrrggh.
+       </p>
+       <br>
+       <br>
+       <h3>Phone-A-Friend!</h3>
+       <p>
+        No, I didn't phone a friend. Because, she is a developer and I have her on Slack. She is one of the people that inspired me to get on this coding boot camp. Anyway, in the thick of my angst, I noticed that my friend, Jae was online, and thought I might pick her brains with the issue. Since she was in a meeting, I tried explaining my problem on chat and sent her the screenshots shown above. Her first response was: "errr, this is going to be tricky because I have a Mac and don't use this particular command line." Damn. But then she suggested that I could navigate to a folder that had the .txt file with my bash profile and open it in a text editor and make changes to it there to undo the stuff I had done before. Whoa! Great idea. I found the file and noticed that the changes I had made showed on those files. However, I was afraid of breaking my command line by deleting any lines, so I deleted a couple of the lines that seemed redundant, saved the file and restarted my Git Bash. It looked a little different but still not quite the same as before. Arrrrrrrrrggghhhh. More frustration.
+       </p>
+       <br>
+       <br>
+       <h3>Rubber Ducky Method</h3>
+       <p>
+        By now I was really angry and probably not helping my own cause. My friend, Jae, had to get back to a meeting, and I was rather conscious of taking up more of her time, on what to me seemed like a really stupid problem to have! I took a break. Came back to my desk and saw that one of my other developer friends, Anna, was online. Yay! Another sign of hope. Perhaps, she could help me out. She asked me what the issue was. And as I started to explain to her what the problem was and the solution I had tried before, it occurred to me that I hadn't deleted all the changes on the .txt file and that I should perhaps try that before I ask Anna for any help. I did that, and boom! when I restarted my Git Bash it looked like it was supposed to. <strong>Hallelujah! </strong>
+       </p>
+       <br>
+       <img src="/images/git-bash-2.png" alt="command line looking normal again!">
+       <br>
+       <br>
+       <p>
+        I felt silly for not having tried this earlier! 
+        <br>
+        <br>
+        However, I am quite glad that I had that experience early on in my Foundations journey because it taught me quite a few important lessons about problem solving.
+       </p>
+       <br>
+       <ol>
+           <li>I started taking the timeboxing suggestions seriously. Timeboxing gives me a reasonably accurate estimate of how much time I spend on a problem.</li>
+           <li>Googling is helpful if you know what questions to ask! That said, googling things has become second nature now. If you're stuck with a problem, chances are that somebody else has been too, and there is an incredible amount of help that can be found online. As always, our problems are not as unique as we like to think they are.</li>
+           <li>Asking for help early - be it peers, friends or coaches.</li>
+           <li>Reflecting on experiences such as the above are an incredibly important part of our learning journey. It helps me see patterns in my behaviour that get in the way of my learning and problem-solving. </li>           
+       </ol>
+    </div>
+  </body>
+</html>
