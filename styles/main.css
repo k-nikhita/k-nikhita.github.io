@@ -281,6 +281,24 @@ border-radius: var(--main-radius);
 padding-top: var(--main-padding);
 margin: 0 25px 0 0;
 }
+.article7 {
+    background-color: #F5F5F5;
+    color: #F05250;
+    font-size: 20px;
+    font-weight:bold;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin: 0 0 0 25px;
+    }
+.article8 {
+    background-color: #F5F5F5;
+    color: #F05250;
+    font-size: 20px;
+    font-weight:bold;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin: 0 25px 0 0;
+    }
 .article1 a{
  text-decoration: none;
  color: #F05250;   
@@ -302,6 +320,14 @@ margin: 0 25px 0 0;
     color: #F05250; 
    }
    .article6 a{
+    text-decoration: none;
+    color: #F05250;    
+   }
+   .article7 a{
+    text-decoration: none;
+    color: #F05250;    
+   }
+   .article8 a{
     text-decoration: none;
     color: #F05250;    
    }
