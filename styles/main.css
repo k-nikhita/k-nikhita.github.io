@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Pontano+Sans&display=swap);
+
 :root {
 --main-radius:15px;
 --main-padding:25px;
@@ -10,20 +10,17 @@
  }
  body {
     background-color: white;
-    font-family: "Noto Sans Display", sans-serif;
-    padding: 50px
+    font-family: 'Roboto', sans-serif;
   }
+
 /*navigation menu*/
 header {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-content: center;
-  padding: 30px 10%;
+  width: 1440px;
+  height: 60px;
 }
-
-nav {
-  margin: 50px 0;
-   }
 
 .nav_links {
   list-style: none;
@@ -33,10 +30,11 @@ nav {
   display: inline-block;
   padding: 0px 60px;
   text-decoration: none;
+  font-size: 14px;
 }
 .nav_links li a {
     text-decoration: none;
-    color: rgb(32, 32, 32);
+    color: #C5004B;
     transition: all 0.3s ease 0s;
 }
 .nav_links li a:hover {
