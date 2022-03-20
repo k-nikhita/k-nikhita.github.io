@@ -32,7 +32,7 @@ header {
   display: inline-block;
   padding: 18px 60px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.2em;
 }
 .nav_links li a {
     text-decoration: none;
@@ -76,16 +76,20 @@ header {
     color: #0D1570;
     }
 
+#blurb {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
 button, #blogbutton {
     background-color: #0D1570;
     border-radius: 5px;
-    width: 200px;
-    height: 30px;
+    width: 320px;
+    height: 40px;
     color: white;
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.3em;
     border: none;
     margin-top: 5%;
 }
