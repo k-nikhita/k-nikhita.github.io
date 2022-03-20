@@ -70,8 +70,22 @@ header {
     font-style: normal;
     font-weight: 500;
     font-size: 3rem;
-    color: #0012CB;
+    color: #0D1570;
     }
+
+button, #blogbutton {
+    background-color: #0D1570;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    margin-top: 5%;
+}
 
 main {
     /* background-color:blue; */
