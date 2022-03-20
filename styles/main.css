@@ -10,6 +10,7 @@
  }
  body {
     font-family: 'Roboto', sans-serif;
+    background-image: url("images/blob.png");
   }
 
 /*navigation menu*/
@@ -41,12 +42,37 @@ header {
     color: rgb(6, 120, 190);
 }
 .container {
-    margin-bottom: 20%;
+    margin-top: 12.5%;
+    margin-right: 0;
+    padding-left: 7%;
+    height: 500px;
+    width: 100%;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr;
-    grid-row-gap: 20px;
-    background-color: #48B7AC;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-gap: 20px
 }
+
+.d1 {
+    align-self: top;
+}
+
+.d2 {
+    grid-area: 1/2/3/3;
+    justify-self: end;
+}
+.d3 {
+    line-height: 1.6;
+}
+
+#welcome {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #0012CB;
+    }
+
 main {
     /* background-color:blue; */
     border-radius: var(--main-radius);
@@ -182,11 +208,7 @@ background-color: #F05250;
     grid-gap: 1rem;
     }
 }
-#welcome {
-font-family: "Noto Sans Display", sans-serif;
-padding: 250px 0 0 0;
-color: #0678be;
-}
+
 
 .blogheader {
     font-family: "Noto Sans Display", sans-serif;
