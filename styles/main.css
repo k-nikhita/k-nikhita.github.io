@@ -98,7 +98,35 @@ main {
 }
 
 
+footer {
+    background: #C7CCFF;
+    color: #565656;
+    height: 15%;
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 4.5%;
+    padding-top: 2%;
+    font-size: 14px;
+}
 
+footer > div {
+    line-height: 2;
+}
+
+footer > div > a {
+    font-size: 20px;
+    padding: 0 40px 0 0;
+    color: #565656;
+}
+
+footer > div > a:hover {
+    color: #C5004B;
+}
+
+footer > hr {
+border: 1px solid #8b8b8b;
+
+}
 .blogheader {
     font-family: "Noto Sans Display", sans-serif;
     font-size: 30px;
@@ -301,10 +329,4 @@ color: #F05250;
     background-color: #F05250;
     width: 200px;
     height: 150px;
-}
-
-footer {
-    background: #C7CCFF;
-    height: 15%;
-    width: 100%;    
 }
