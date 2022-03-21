@@ -127,6 +127,10 @@ footer > div > a:hover {
     color: #C5004B;
 }
 
+footer > div > p > a:hover {
+    color: #C5004B;
+}
+
 footer > hr {
 border: 1px solid #8b8b8b;
 
