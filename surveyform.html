@@ -22,8 +22,11 @@
     </header>
    
       <main>
-        <div class="box, mx-6">
-        <section class="hero is-link">
+      <div class="columns">
+        <div class="column"></div>
+
+        <div class="column is-two-fifths">
+          <section class="hero is-link">
             <div class="hero-body">
               <p class="title">
                 Website Experience Survey Form
@@ -33,7 +36,6 @@
               </p>
             </div>
           </section>
-
           <form id="survey-form">
             <div class="field">
                 <label class="label" for="name" id="name-label">Name</label>
@@ -68,31 +70,60 @@
                                     <option value="You're famous!">You're famous!</option>                 
                         </select>
                     </div>
+                  </div>
+            </div>
 
-             <label class="label" for="recommend">Would you recommend this page to a friend?</label><br>
-            <input type="radio" id="yes" name="recommend" value="Yes">
-            <label for="yes">Yes</label><br>
-            <input type="radio" id="no" name="recommend" value="No">
-            <label for="no">No</label><br>
-            <input type="radio" id="not-sure" name="recommend" value="I'm not sure!">
-            <label for="not-sure">I'm not sure!</label><br><br>
-            <label class="label" for="feedback">What would you like to see improved on this website? (Check all that apply)</label><br>
-            <input type="checkbox" id="content" name="content" value="Content">
-            <label for="content">Better content</label><br>
-            <input type="checkbox" id="ux" name="ux" value="UX">
-            <label for="ux">Better UX/Design</label><br>
-            <input type="checkbox" id="feature" name="feature" value="Features">
-            <label for="feature">More features!</label><br><br>
-             <label class="label" for="comments">Any other comments or suggestions?</label><br>
-            <textarea name="comments" rows="10" cols="30" placeholder="Enter your comment here..."></textarea>
-            <br><br>
-            <input type="submit" id="submit" value="Submit">
+            <div class="field">  
+                <label class="label" for="recommend">Would you recommend this page to a friend?</label>
+                <div class="control">
+                  <label class="radio">
+                  <input type="radio" id="yes" name="recommend" value="Yes">
+                  Yes
+                  </label>
+                  <label class="radio">
+                  <input type="radio" id="no" name="recommend" value="No">
+                   No
+                  </label>
+                  <label class="radio">
+                  <input type="radio" id="not-sure" name="recommend" value="I'm not sure">
+                  I'm not sure!
+                  </label>
+                </div>
+            </div>
+
+            <div class="field">  
+                <label class="label" for="feedback">What would you like to see improved on this website? (Check all that apply)</label>
+                <div class="control">
+                  <label class="checkbox">
+                  <input type="checkbox" id="content" name="content" value="Content">
+                  Better content
+                </label><br/>
+                <label class="checkbox">
+                  <input type="checkbox" id="ux" name="ux" value="UX">
+                  Better UX/Design
+                </label><br/>
+                <label class="checkbox">
+                  <input type="checkbox" id="feature" name="feature" value="Features">
+                  More features!
+                </label>
+              </div>
+            </div>
+            
+          <div class="field">  
+             <label class="label" for="comments">Any other comments or suggestions?</label>
+             <div class="control">
+              <textarea class="textarea is-link" name="comments" rows="10" placeholder="Enter your comment here..."></textarea>
+             </div>
+          </div>
+          
+          <button class="button is-link is-responsive is-fullwidth" id="submit">Submit</button>
           </form>
 
-          </div>
 
+        </div>
 
-       
+        <div class="column"></div>
+      </div>  
       </main>
      
       <footer>
