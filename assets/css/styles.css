@@ -1,340 +1,221 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+/*==================== VARIABLES CSS ====================*/
 :root {
---main-radius:15px;
---main-padding:25px;
+    --header-height: 3rem;
+
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
 }
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== Button Dark/Light ==========*/
+
+
+/*==================== BASE ====================*/
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
- }
-
- body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url("images/blob.png");
- }
-
-/*navigation menu*/
-header {
-  display: flex;
-  justify-content: left;
-  align-content: center;
-  width: 1440px;
-  height: 60px;
+  margin: 0;
 }
 
-.nav_links {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
   list-style: none;
-  margin-left: 87px;
 }
 
-.nav_links li {
-  display: inline-block;
-  padding: 18px 60px;
+a {
   text-decoration: none;
-  font-size: 1.2em;
-}
-.nav_links li a {
-    text-decoration: none;
-    color: #C5004B;
-    transition: all 0.3s ease 0s;
-}
-.nav_links li a:hover {
-    color: rgb(6, 120, 190);
 }
 
-/*main page*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section__title, 
+.section__subtitle {
+  text-align: center;
+}
+
+/*==================== LAYOUT ====================*/
 .container {
-    margin-top: 12.5%;
-    margin-right: 0;
-    padding-left: 7%;
-    height: 500px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    grid-gap: 20px
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
 }
 
-.d1 {
-    align-self: top;
+.grid {
+  display: grid;
+  gap: 1.5rem;
 }
 
-.d2 {
-    grid-area: 1/2/3/3;
-    justify-self: end;
-}
-.d3 {
-    line-height: 1.6;
-}
-
-#welcome {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3rem;
-    color: #0D1570;
-    }
-
-#blurb {
-    font-size: 1.3em;
-    line-height: 1.5;
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
 }
 
-button, #blogbutton {
-    background-color: #0D1570;
-    border-radius: 5px;
-    width: 320px;
-    height: 40px;
-    color: white;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 1.3em;
-    border: none;
-    margin-top: 5%;
-}
-
-main {
-    /* background-color:blue; */
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    margin: 0 0 0 10px;
-}
+/*==================== NAV ====================*/
 
 
-footer {
-    background: #C7CCFF;
-    color: #565656;
-    height: 15%;
-    width: 100%;
-    padding-left: 7%;
-    padding-right: 4.5%;
-    padding-top: 2%;
-    font-size: 14px;
-}
+/* show menu */
 
-footer > div {
-    line-height: 2;
-}
 
-footer > div > a {
-    font-size: 20px;
-    padding: 0 40px 0 0;
-    color: #565656;
-}
+/* Active link */
 
-footer > div > a:hover {
-    color: #C5004B;
-}
 
-footer > div > p > a:hover {
-    color: #C5004B;
-}
+/* Change background header */
 
-footer > hr {
-border: 1px solid #8b8b8b;
 
-}
-.blogheader {
-    font-family: "Noto Sans Display", sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #0678be;
-    text-align: center;
-    padding: 5px;
-   }
-.blogdesc {
-    text-align: center;
-    padding: 0 0 25px 0;
-}
-.blogcontainer {
- display: grid; 
- height: 100vh;
- grid-template-columns: 1fr 1fr 1fr;
- grid-gap: 2rem  
-}
-.article1 {
-background-color: #F5F5F5;
-color: #F05250;
-font-size: 20px;
-font-weight:bold;
-border-radius: var(--main-radius);
-padding-top: var(--main-padding);
-margin: 0 0 0 25px;
-}
-.article2 {
-background-color: #F5F5F5;
-color: #F05250;
-font-size: 20px;
-font-weight:bold;
-border-radius: var(--main-radius);
-padding-top: var(--main-padding);
-}
-.article3 {
-background-color: #F5F5F5;
-color: #F05250;
-font-size: 20px;
-font-weight:bold;
-border-radius: var(--main-radius);
-padding-top: var(--main-padding);
-margin: 0 25px 0 0;
-}
-.article4 {
-background-color: #F5F5F5;
-color: #F05250;
-font-size: 20px;
-font-weight:bold;
-border-radius: var(--main-radius);
-padding-top: var(--main-padding);
-margin: 0 0 0 25px;
-}
-.article5 {
-background-color: #F5F5F5;
-color: #F05250;
-font-size: 20px;
-font-weight:bold;
-border-radius: var(--main-radius);
-padding-top: var(--main-padding);
-}
-.article6 {
-background-color: #F5F5F5;
-color: #F05250;
-font-size: 20px;
-font-weight:bold;
-border-radius: var(--main-radius);
-padding-top: var(--main-padding);
-margin: 0 25px 0 0;
-}
-.article7 {
-    background-color: #F5F5F5;
-    color: #F05250;
-    font-size: 20px;
-    font-weight:bold;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    margin: 0 0 0 25px;
-    }
-.article8 {
-    background-color: #F5F5F5;
-    color: #F05250;
-    font-size: 20px;
-    font-weight:bold;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    margin: 0 25px 0 0;
-    }
-.article1 a{
- text-decoration: none;
- color: #F05250;   
-}
-.article2 a{
-    text-decoration: none;
-    color: #F05250;    
-   }
- .article3 a{
-    text-decoration: none;
-    color: #F05250;    
-   }
-   .article4 a{
-    text-decoration: none;  
-    color: #F05250;  
-   }
-   .article5 a{
-    text-decoration: none;   
-    color: #F05250; 
-   }
-   .article6 a{
-    text-decoration: none;
-    color: #F05250;    
-   }
-   .article7 a{
-    text-decoration: none;
-    color: #F05250;    
-   }
-   .article8 a{
-    text-decoration: none;
-    color: #F05250;    
-   }
-@media only screen and (max-width:550px) {
-    .blogcontainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr; 
-    grid-gap: 1rem;
-    }
-}
-.articletitle {
-    font-family: "Noto Sans Display", sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #0678be;
-    text-align: center;
-    padding: 0 0 45px 0;
-}
-div ul {
-    list-style-position: inside;
-}
-div ol {
-    list-style-position: inside;
-}
-h4 {
-    color: #0678BE;
-}
-h5 {
-font-size: 10.5pt;
-font-weight:normal;
-color: #F05250;
-}
-.quote {
-    text-align: center;
-    position: sticky;
-    top: 0;
-    padding: 10px;
-    background-color: #CDEEF4;
-}
+/*==================== HOME ====================*/
 
-.codingtext {
-    font-size: 12pt;
-    color: #F05250;
-    background-color: #EBEBEB;
-}
-#techblog1 {
-    border-style: solid;
-    border-width: 4px;
-    border-color: #F99F1B;
- }
-#relposition {
-    border: 1px solid rgb(231, 228, 228);
-    float: right;
-    margin: 20px;
-    position: relative;
-    top: 18px;
-}
 
-#fixedposition {
-    border: 3px solid #0678BE;
-    background-color: #CDEEF4;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    max-width: 500px;
-    padding: 6px;
-    }
+/*==================== BUTTONS ====================*/
 
-#bluebox {
-    position: relative;
-    background-color: #0678be;
-    color: white;
-    width: 300px;
-    height: 200px;
-    top: 20px;
-    left: 80px;
-}
 
-#coralbox {
-    position: absolute;
-    top: 50px;
-    right: 0px;
-    background-color: #F05250;
-    width: 200px;
-    height: 150px;
-}
+/*==================== ABOUT ====================*/
+
+
+/*==================== SKILLS ====================*/
+
+
+/*==================== QUALIFICATION ====================*/
+
+
+/*==================== SERVICES ====================*/
+
+
+/* Active Modal */
+
+
+/*==================== PORTFOLIO ====================*/
+
+
+/*==================== PROJECT IN MIND ====================*/
+
+
+/*==================== TESTIMONIAL ====================*/
+
+
+/*==================== CONTACT ME ====================*/
+
+
+/*==================== FOOTER ====================*/
+
+
+/*========== SCROLL UP ==========*/
+
+
+/* Show scroll */
+
+
+/*========== SCROLL BAR ==========*/
+
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */

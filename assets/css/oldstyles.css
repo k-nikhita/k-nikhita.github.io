@@ -1,0 +1,340 @@
+
+:root {
+--main-radius:15px;
+--main-padding:25px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("images/blob.png");
+ }
+
+/*navigation menu*/
+header {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  width: 1440px;
+  height: 60px;
+}
+
+.nav_links {
+  list-style: none;
+  margin-left: 87px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 18px 60px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.nav_links li a {
+    text-decoration: none;
+    color: #C5004B;
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: rgb(6, 120, 190);
+}
+
+/*main page*/
+.container {
+    margin-top: 12.5%;
+    margin-right: 0;
+    padding-left: 7%;
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-gap: 20px
+}
+
+.d1 {
+    align-self: top;
+}
+
+.d2 {
+    grid-area: 1/2/3/3;
+    justify-self: end;
+}
+.d3 {
+    line-height: 1.6;
+}
+
+#welcome {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #0D1570;
+    }
+
+#blurb {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+button, #blogbutton {
+    background-color: #0D1570;
+    border-radius: 5px;
+    width: 320px;
+    height: 40px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.3em;
+    border: none;
+    margin-top: 5%;
+}
+
+main {
+    /* background-color:blue; */
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin: 0 0 0 10px;
+}
+
+
+footer {
+    background: #C7CCFF;
+    color: #565656;
+    height: 15%;
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 4.5%;
+    padding-top: 2%;
+    font-size: 14px;
+}
+
+footer > div {
+    line-height: 2;
+}
+
+footer > div > a {
+    font-size: 20px;
+    padding: 0 40px 0 0;
+    color: #565656;
+}
+
+footer > div > a:hover {
+    color: #C5004B;
+}
+
+footer > div > p > a:hover {
+    color: #C5004B;
+}
+
+footer > hr {
+border: 1px solid #8b8b8b;
+
+}
+.blogheader {
+    font-family: "Noto Sans Display", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0678be;
+    text-align: center;
+    padding: 5px;
+   }
+.blogdesc {
+    text-align: center;
+    padding: 0 0 25px 0;
+}
+.blogcontainer {
+ display: grid; 
+ height: 100vh;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-gap: 2rem  
+}
+.article1 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+margin: 0 0 0 25px;
+}
+.article2 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+}
+.article3 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+margin: 0 25px 0 0;
+}
+.article4 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+margin: 0 0 0 25px;
+}
+.article5 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+}
+.article6 {
+background-color: #F5F5F5;
+color: #F05250;
+font-size: 20px;
+font-weight:bold;
+border-radius: var(--main-radius);
+padding-top: var(--main-padding);
+margin: 0 25px 0 0;
+}
+.article7 {
+    background-color: #F5F5F5;
+    color: #F05250;
+    font-size: 20px;
+    font-weight:bold;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin: 0 0 0 25px;
+    }
+.article8 {
+    background-color: #F5F5F5;
+    color: #F05250;
+    font-size: 20px;
+    font-weight:bold;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin: 0 25px 0 0;
+    }
+.article1 a{
+ text-decoration: none;
+ color: #F05250;   
+}
+.article2 a{
+    text-decoration: none;
+    color: #F05250;    
+   }
+ .article3 a{
+    text-decoration: none;
+    color: #F05250;    
+   }
+   .article4 a{
+    text-decoration: none;  
+    color: #F05250;  
+   }
+   .article5 a{
+    text-decoration: none;   
+    color: #F05250; 
+   }
+   .article6 a{
+    text-decoration: none;
+    color: #F05250;    
+   }
+   .article7 a{
+    text-decoration: none;
+    color: #F05250;    
+   }
+   .article8 a{
+    text-decoration: none;
+    color: #F05250;    
+   }
+@media only screen and (max-width:550px) {
+    .blogcontainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr; 
+    grid-gap: 1rem;
+    }
+}
+.articletitle {
+    font-family: "Noto Sans Display", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0678be;
+    text-align: center;
+    padding: 0 0 45px 0;
+}
+div ul {
+    list-style-position: inside;
+}
+div ol {
+    list-style-position: inside;
+}
+h4 {
+    color: #0678BE;
+}
+h5 {
+font-size: 10.5pt;
+font-weight:normal;
+color: #F05250;
+}
+.quote {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: #CDEEF4;
+}
+
+.codingtext {
+    font-size: 12pt;
+    color: #F05250;
+    background-color: #EBEBEB;
+}
+#techblog1 {
+    border-style: solid;
+    border-width: 4px;
+    border-color: #F99F1B;
+ }
+#relposition {
+    border: 1px solid rgb(231, 228, 228);
+    float: right;
+    margin: 20px;
+    position: relative;
+    top: 18px;
+}
+
+#fixedposition {
+    border: 3px solid #0678BE;
+    background-color: #CDEEF4;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-width: 500px;
+    padding: 6px;
+    }
+
+#bluebox {
+    position: relative;
+    background-color: #0678be;
+    color: white;
+    width: 300px;
+    height: 200px;
+    top: 20px;
+    left: 80px;
+}
+
+#coralbox {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    background-color: #F05250;
+    width: 200px;
+    height: 150px;
+}
