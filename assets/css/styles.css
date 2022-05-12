@@ -478,6 +478,7 @@ img {
     width: 60%;
 }
 
+
 .skills__figma{
     width: 90%;
 }
@@ -488,8 +489,19 @@ img {
     width: 60%;
 }
 
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
 
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
 
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
+}
 /*==================== QUALIFICATION ====================*/
 
 
