@@ -547,6 +547,23 @@ img {
     color: var(--text-color-light);
 }
 
+.qualification__rounder{
+     display: inline-block;
+     width: 13px;
+     height: 13px;
+     background-color: var(--first-color);
+     border-radius: 50%;
+}
+
+.qualification__line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px)
+
+}
+
 /*==================== SERVICES ====================*/
 
 
