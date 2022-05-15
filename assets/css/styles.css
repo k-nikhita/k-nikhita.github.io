@@ -561,8 +561,20 @@ img {
     height: 100%;
     background-color: var(--first-color);
     transform: translate(6px, -7px)
-
 }
+
+.qualification [data-content]{
+    display: none;
+}
+
+.qualification__active[data-content]{
+    display: block;
+}
+
+.qualification__button.qualification__active{
+    color: var(--first-color)
+}
+
 
 /*==================== SERVICES ====================*/
 
