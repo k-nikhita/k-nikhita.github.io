@@ -70,9 +70,7 @@
 }
 
 /*========== Variables Dark theme ==========*/
-
 /*========== Button Dark/Light ==========*/
-
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
@@ -235,7 +233,9 @@ img {
 }
 
 /* Active link */
-
+.active-link{
+    color: var(--first-color);
+}
 
 /* Change background header */
 
