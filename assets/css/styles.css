@@ -352,6 +352,13 @@ img {
 }
 
 /*==================== BUTTONS ====================*/
+button{
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+}
+
 .button{
     display: inline-block;
     background-color: var(--first-color);
