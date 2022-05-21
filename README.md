@@ -15,3 +15,12 @@ http://getbem.com/introduction/
 - HTML
 - CSS
 - JavaScript
+
+### References:
+- SWIPER JS: https://swiperjs.com/demos#css-mode
+- SWIPER JS Code on GitHub: https://github.com/nolimits4web/swiper/tree/master/demos
+- Responsive Website (Restaurant): https://github.com/bedimcode/responsive-website-restaurant
+- Icons: https://iconscout.com/unicons
+- Responsive Personal Portfolio Website: https://www.youtube.com/watch?v=27JtRAI3QO8&t=2920s 
+
+
