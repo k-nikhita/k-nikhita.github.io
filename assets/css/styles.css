@@ -1291,3 +1291,21 @@ button{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* MINESWEEPER */
+.ms__grid{
+   height: 400px;
+   width: 400px;
+   display: flex;
+   flex-wrap: wrap;
+   background-color: var(--first-color-lighter);
+}
+
+.ms__grid div{
+   height: 40px;
+   width: 40px; 
+}
+
+.bomb{
+    background-color: #dcd6d9;
+}
