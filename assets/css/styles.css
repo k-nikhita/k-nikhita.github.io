@@ -515,10 +515,10 @@ button{
 }
 
 .skills__html{
-    width: 90%;
+    width: 80%;
 }
 .skills__css{
-    width: 80%;
+    width: 60%;
 }
 .skills__js{
     width: 60%;
@@ -531,7 +531,7 @@ button{
     width: 90%;
 }
 .skills__node{
-    width: 80%;
+    width: 60%;
 }
 .skills__firebase{
     width: 60%;
@@ -542,13 +542,13 @@ button{
 
 
 .skills__figma{
-    width: 90%;
+    width: 40%;
 }
-.skills__sketch{
-    width: 80%;
+.skills__sqlite{
+    width: 35%;
 }
-.skills__photoshop{
-    width: 60%;
+.skills__redux{
+    width: 35%;
 }
 
 .skills__close .skills__list{
