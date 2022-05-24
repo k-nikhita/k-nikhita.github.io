@@ -1309,3 +1309,7 @@ button{
 .bomb{
     background-color: #dcd6d9;
 }
+
+.checked{
+    background-color: var(--first-color);
+}
