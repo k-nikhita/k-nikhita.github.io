@@ -3,6 +3,7 @@ let width = 10
 let bombAmount = 20
 let squares = []
 let isGameOver = false
+let flags = 0
 
 //create Board
 function createBoard() {
@@ -27,6 +28,12 @@ function createBoard() {
         square.addEventListener('click', function(e) {
             click(square )
         })
+
+        //ctrl and left click
+        square.oncontextmenu = function(e) {
+            e.preventDefault()
+            addFlag(square)
+        }
     }
 
     //add numbers to the board
@@ -50,6 +57,24 @@ function createBoard() {
     }
 }
 createBoard()
+
+//add Flag with right click
+function addFlag(square) {
+    if (isGameOver) return
+    if (!square.classList.contains('checked') && (flags < bombAmount)) {
+        if (!square.classList.contains('flag')) {
+            square.classList.add('flag')
+            square.innerHTML = '🚩'
+            flags ++
+            checkForWin()
+        } else {
+            square.classList.remove('flag')
+            square.innerHTML = ''
+            flags --
+        }
+
+    }
+}
 
 //click on square actions
 function click(square) {
@@ -126,7 +151,7 @@ function checkSquare(square, currentId) {
 
 //game over
 function gameOver(square) {
-    console.log('BOOM! Game Over')
+    alert('BOOM! Game Over')
     isGameOver = true
 
     //show ALL the bombs
@@ -135,6 +160,21 @@ function gameOver(square) {
             square.innerHTML = '💣' 
         }
     })
+}
+
+//check for win
+function checkForWin() { 
+let matches = 0
+
+    for (let i = 0; i < squares.length; i++) {
+        if (squares[i].classList.contains('flag') && squares[i].classList.contains('bomb')) {
+            matches ++
+        }
+        if (matches === bombAmount) {
+            alert('YOU WIN')
+            isGameOver = true
+        }
+    }
 }
 
 
