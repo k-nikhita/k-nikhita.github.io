@@ -177,5 +177,10 @@ let matches = 0
     }
 }
 
+function startOver(){
+    window.location.reload()
+    console.log("You just refreshed the page")
+}
+
 
 

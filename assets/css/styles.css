@@ -1299,17 +1299,23 @@ button{
    display: flex;
    flex-wrap: wrap;
    background-color: var(--first-color-lighter);
+   border-radius: 5px;
 }
 
 .ms__grid div{
    height: 40px;
-   width: 40px; 
+   width: 40px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--text-color);
 }
 
 .bomb{
-    background-color: #dcd6d9;
+    background-color: var(--first-color-lighter);
 }
 
 .checked{
-    background-color: var(--first-color);
+    background-color: var(--first-color-lighter);
 }
