@@ -1309,7 +1309,7 @@ button{
    display: flex;
    justify-content: center;
    align-items: center;
-   color: var(--text-color);
+   color: white;
 }
 
 .bomb{
@@ -1317,5 +1317,5 @@ button{
 }
 
 .checked{
-    background-color: var(--first-color-lighter);
+    background-color: var(--first-color);
 }

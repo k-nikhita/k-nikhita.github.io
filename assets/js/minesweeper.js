@@ -52,7 +52,7 @@ function createBoard() {
             if (i < 88 && !isRightEdge && squares[i +1 +width].classList.contains('bomb')) total++
             if (i < 89 && squares[i + width].classList.contains('bomb')) total++
             squares[i].setAttribute('data', total)   
-            console.log(squares[i])
+            // console.log(squares[i])
         }
     }
 }
@@ -177,10 +177,9 @@ let matches = 0
     }
 }
 
-function startOver(){
+const refreshButton = document.getElementById('startOverBtn').addEventListener('click', function(){
     window.location.reload()
-    console.log("You just refreshed the page")
-}
+})
 
 
 
