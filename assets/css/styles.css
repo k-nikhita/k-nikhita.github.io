@@ -1319,3 +1319,14 @@ button{
 .checked{
     background-color: var(--first-color);
 }
+
+.wordle_img {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.wordle_img img {
+    border-radius: 5px;
+}
